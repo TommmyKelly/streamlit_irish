@@ -45,7 +45,10 @@ input_text = st.text_input('Search for a word',key='input_text',autocomplete='on
 if input_text:
     text = st.session_state['input_text'].strip().lower()
     out_put = connect_to_db(f"SELECT english, irish FROM words WHERE english = '{text}';", 'english', text)
-    st.write(out_put)
+    if len(out_put) == 0:
+        st.write(f"Sorry  nothing found for {text}")
+    else:
+        st.write(out_put)
 
 
 
