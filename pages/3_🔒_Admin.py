@@ -101,7 +101,12 @@ if authentication_status:
     # admin_status = users.fetch({'email': username}).items[0]['admin']
    
     # admin only
-    st.write(f"Welcome {name}")
+    # st.write(f"Welcome {name}")
+
+    with st.expander('Add Words'):
+        with st.form('Add words'):
+            english = st.text_input('English',key='English word')
+            st.form_submit_button(label='Submit')
                 
     st.write('---')    
 
