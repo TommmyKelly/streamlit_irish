@@ -91,7 +91,9 @@ name, authentication_status, username = authenticator.login('Login', 'main')
 
 
 if authentication_status == False:
-    st.error('Username/password is incorrect')
+    place1 = st.error('Username/password is incorrect')
+    time.sleep(3)
+    place1.empty()
    
 if authentication_status == None:
     st.warning('Please enter your username and password')
