@@ -118,9 +118,6 @@ six==1.15.0
 smmap==5.0.0
 sortedcontainers==2.3.0
 soupsieve==2.3.2.post1
-SQLAlchemy==1.4.36
-sqlalchemy-migrate==0.11.0
-sqlparse==0.4.1
 stack-data==0.2.0
 streamlit==1.20.0
 streamlit-authenticator==0.1.5
