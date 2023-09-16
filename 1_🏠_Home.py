@@ -33,7 +33,7 @@ def connect_to_db(query: str, index: str, text="") -> pd.DataFrame:
     
 col1, col2 = st.columns([1,1])
 with col1:
-    display_button = st.button('Click')
+    display_button = st.button('Show all words')
 with col2:
     if display_button: 
         close_display_button = st.button('close',)
